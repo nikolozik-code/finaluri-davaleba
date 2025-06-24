@@ -51,27 +51,27 @@ html {
   background-color: rgb(0, 0, 0);
 }
 
-header {
+.header-1 {
   height: 80px;
   background-color: rgb(20, 20, 20);
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
-header img {
+.header-1 img {
   width: 80px;
   align-items: center;
 }
-header #x {
+.header-1 #x {
   width: 80px;
   align-items: center;
 }
-header #logo {
+.header-1 #logo {
   width: 70px;
   padding-left: 10px;
   margin-left: -40px;
 }
-header a {
+.header-1 a {
   text-decoration: none;
   color: #b7b7b7;
   font-family: "Montserrat", sans-serif;
@@ -82,12 +82,12 @@ header a {
   padding-left: 50px;
   padding-right: 50px;
 }
-header #active {
+.header-1 #active {
   color: #ffffff;
   background-color: rgb(111, 111, 111);
   border-radius: 20px;
 }
-header #tbc {
+.header-1 #tbc {
   margin-right: -50px;
 }
 
@@ -108,79 +108,13 @@ header #tbc {
   font-family: "Alfa Slab One", serif;
   font-weight: 400;
   font-style: normal;
-  color: white;
-  font-size: 100px;
-  transition: 0.5s;
-}
-
-html {
-  background-color: rgb(0, 0, 0);
-}
-
-header {
-  height: 80px;
-  background-color: rgb(20, 20, 20);
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-header img {
-  width: 80px;
-  align-items: center;
-}
-header #x {
-  width: 80px;
-  align-items: center;
-}
-header #logo {
-  width: 70px;
-  padding-left: 10px;
-  margin-left: -40px;
-}
-header a {
-  text-decoration: none;
-  color: #b7b7b7;
-  font-family: "Montserrat", sans-serif;
-  font-size: 20px;
-  font-weight: 500;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
-  padding-left: 50px;
-  padding-right: 50px;
-}
-header #active {
-  color: #ffffff;
-  background-color: rgb(111, 111, 111);
-  border-radius: 20px;
-}
-header #tbc {
-  margin-right: -50px;
-}
-
-.cover {
-  width: 100%;
-  height: 400px;
-  background-image: url(./../imges/cover.png);
-  background-size: cover;
-}
-.cover :hover {
-  font-size: 110px;
-  transition: 0.5s;
-  transition: scale 1;
-}
-.cover h1 {
-  text-align: center;
-  justify-content: center;
-  font-family: "Alfa Slab One", serif;
-  font-weight: 400;
-  font-style: normal;
-  color: white;
+  color: rgba(255, 255, 255, 0.718);
   font-size: 100px;
   transition: 0.5s;
 }
 
 #title {
-  color: white;
+  color: rgba(255, 255, 255, 0.718);
   font-family: "Roboto", sans-serif;
   font-size: 200%;
   margin-left: 41%;
@@ -188,7 +122,7 @@ header #tbc {
 }
 
 #title-more {
-  color: white;
+  color: rgba(255, 255, 255, 0.718);
   font-family: "Roboto", sans-serif;
   font-size: 150%;
   margin-left: 90%;
@@ -205,15 +139,16 @@ header #tbc {
   margin-top: 30px;
   justify-content: space-around;
 }
-.albums .card {
+.albums .billie {
   width: 173px;
   height: 220px;
-  background-color: #262626;
+  background: #0e1545;
+  background: linear-gradient(0deg, rgb(14, 21, 69) 22%, rgb(25, 25, 94) 100%);
   border-radius: 20px;
   margin-left: 40px;
   transition: 0.5s;
 }
-.albums .card h2 {
+.albums .billie h2 {
   color: rgb(202, 202, 202);
   font-family: "Roboto", sans-serif;
   font-size: 14px;
@@ -223,7 +158,7 @@ header #tbc {
   display: block;
   transition: 0.5s;
 }
-.albums .card h3 {
+.albums .billie h3 {
   color: rgb(202, 202, 202);
   font-family: "Roboto", sans-serif;
   text-align: center;
@@ -231,7 +166,7 @@ header #tbc {
   display: block;
   transition: 0.5s;
 }
-.albums .card img {
+.albums .billie img {
   width: 155px;
   height: 155px;
   margin-left: 9px;
@@ -240,23 +175,386 @@ header #tbc {
   transition: 0.5s;
 }
 
-.card:hover {
+.billie:hover {
   width: 300px;
   height: 220px;
   transition: 0.5s;
 }
-.card:hover h2 {
+.billie:hover h2 {
   margin-left: -120px;
   transition: 0.5s;
 }
-.card:hover h3 {
+.billie:hover h3 {
   margin-left: -120px;
   transition: 0.5s;
 }
-.card:hover img {
+.billie:hover img {
   width: 160px;
   height: 160px;
   transition: 0, 5s;
+}
+
+.xcx {
+  width: 173px;
+  height: 220px;
+  background: #826127;
+  background: linear-gradient(0deg, rgb(130, 97, 39) 29%, rgb(46, 184, 53) 100%);
+  border-radius: 20px;
+  margin-left: 40px;
+  transition: 0.5s;
+}
+.xcx h2 {
+  color: rgb(202, 202, 202);
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  padding-left: 2px;
+  margin-top: 5px;
+  text-align: center;
+  display: block;
+  transition: 0.5s;
+}
+.xcx h3 {
+  color: rgb(202, 202, 202);
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  padding-top: 6px;
+  display: block;
+  transition: 0.5s;
+}
+.xcx img {
+  width: 155px;
+  height: 155px;
+  margin-left: 9px;
+  margin-top: 9px;
+  border-radius: 9%;
+  transition: 0.5s;
+}
+
+.xcx:hover {
+  width: 300px;
+  height: 220px;
+  transition: 0.5s;
+}
+.xcx:hover h2 {
+  margin-left: -120px;
+  transition: 0.5s;
+}
+.xcx:hover h3 {
+  margin-left: -120px;
+  transition: 0.5s;
+}
+.xcx:hover img {
+  width: 160px;
+  height: 160px;
+  transition: 0, 5s;
+}
+
+.lana {
+  width: 173px;
+  height: 220px;
+  background: #bababa;
+  background: linear-gradient(0deg, rgb(186, 186, 186) 12%, rgb(51, 189, 182) 100%);
+  border-radius: 20px;
+  margin-left: 40px;
+  transition: 0.5s;
+}
+.lana h2 {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  padding-left: 2px;
+  margin-top: 5px;
+  text-align: center;
+  display: block;
+  transition: 0.5s;
+}
+.lana h3 {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  padding-top: 6px;
+  display: block;
+  transition: 0.5s;
+}
+.lana img {
+  width: 155px;
+  height: 155px;
+  margin-left: 9px;
+  margin-top: 9px;
+  border-radius: 9%;
+  transition: 0.5s;
+}
+
+.lana:hover {
+  width: 300px;
+  height: 220px;
+  transition: 0.5s;
+}
+.lana:hover h2 {
+  margin-left: -120px;
+  transition: 0.5s;
+}
+.lana:hover h3 {
+  margin-left: -120px;
+  transition: 0.5s;
+}
+.lana:hover img {
+  width: 160px;
+  height: 160px;
+  transition: 0, 5s;
+}
+
+.neighbourhood {
+  width: 173px;
+  height: 220px;
+  background-color: rgb(50, 50, 50);
+  border-radius: 20px;
+  margin-left: 40px;
+  transition: 0.5s;
+}
+.neighbourhood h2 {
+  color: rgb(202, 202, 202);
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  padding-left: 2px;
+  margin-top: 5px;
+  text-align: center;
+  display: block;
+  transition: 0.5s;
+}
+.neighbourhood h3 {
+  color: rgb(202, 202, 202);
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  padding-top: 6px;
+  display: block;
+  transition: 0.5s;
+}
+.neighbourhood img {
+  width: 155px;
+  height: 155px;
+  margin-left: 9px;
+  margin-top: 9px;
+  border-radius: 9%;
+  transition: 0.5s;
+}
+
+.neighbourhood:hover {
+  width: 300px;
+  height: 220px;
+  transition: 0.5s;
+}
+.neighbourhood:hover h2 {
+  margin-left: -120px;
+  transition: 0.5s;
+}
+.neighbourhood:hover h3 {
+  margin-left: -120px;
+  transition: 0.5s;
+}
+.neighbourhood:hover img {
+  width: 160px;
+  height: 160px;
+  transition: 0, 5s;
+}
+
+.tay {
+  width: 173px;
+  height: 220px;
+  background: #e8e8e8;
+  background: linear-gradient(141deg, rgb(232, 232, 232) 13%, rgb(107, 107, 107) 83%);
+  border-radius: 20px;
+  margin-left: 40px;
+  transition: 0.5s;
+}
+.tay h2 {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  padding-left: 2px;
+  margin-top: 5px;
+  text-align: center;
+  display: block;
+  transition: 0.5s;
+}
+.tay h3 {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  padding-top: 6px;
+  display: block;
+  transition: 0.5s;
+}
+.tay img {
+  width: 155px;
+  height: 155px;
+  margin-left: 9px;
+  margin-top: 9px;
+  border-radius: 9%;
+  transition: 0.5s;
+}
+
+.tay:hover {
+  width: 300px;
+  height: 220px;
+  transition: 0.5s;
+}
+.tay:hover h2 {
+  margin-left: -120px;
+  transition: 0.5s;
+}
+.tay:hover h3 {
+  margin-left: -120px;
+  transition: 0.5s;
+}
+.tay:hover img {
+  width: 160px;
+  height: 160px;
+  transition: 0, 5s;
+}
+
+#genre {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+nav, ul, li {
+  display: inline;
+}
+nav ul, ul ul, li ul {
+  list-style: none;
+  margin-top: 20px;
+}
+nav a, ul a, li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+  font-size: 25px;
+  font-family: "Roboto", sans-serif;
+  margin-left: 35px;
+  padding: 8px;
+  background: #942fb5;
+  background: linear-gradient(0deg, rgb(148, 47, 181) 0%, rgb(146, 52, 182) 29%, rgb(45, 253, 225) 100%);
+  border-radius: 10px;
+}
+
+#title2 {
+  color: rgb(79, 202, 255);
+  font-family: "Roboto", sans-serif;
+  font-size: 200%;
+  margin-left: 2%;
+  margin-bottom: 20px;
+}
+
+.ttop {
+  width: 50%;
+  height: 575px;
+  margin-left: 30px;
+  background-image: url(./../imges/indie1.webp);
+  background-size: cover;
+  border-radius: 20px;
+}
+.ttop h1 {
+  color: white;
+  font-size: 100px;
+  font-family: "Monoton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding-top: 410px;
+  padding-left: 10px;
+}
+.ttop h3 {
+  color: white;
+  font-size: 30px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding-top: 20px;
+  padding-left: 10px;
+}
+
+.indie3 {
+  width: 40%;
+  height: 170px;
+  background-image: url(./../imges/indie.webp);
+  background-size: cover;
+  margin-left: 855px;
+  margin-top: -570px;
+  border-radius: 20px;
+}
+.indie3 h1 {
+  color: white;
+  font-size: 50px;
+  font-family: "Alfa Slab One", serif;
+  font-weight: 400;
+  font-style: normal;
+  padding-top: 40px;
+  padding-left: 10px;
+}
+.indie3 h3 {
+  color: white;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding-top: 20px;
+  padding-left: 10px;
+}
+
+.indie2 {
+  width: 40%;
+  height: 170px;
+  background-image: url(./../imges/indie2.webp);
+  background-size: cover;
+  margin-left: 855px;
+  margin-top: 30px;
+  border-radius: 20px;
+}
+.indie2 h1 {
+  color: white;
+  font-size: 50px;
+  font-family: "Truculenta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding-top: 40px;
+  padding-left: 10px;
+}
+.indie2 h3 {
+  color: white;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding-top: 20px;
+  padding-left: 10px;
+}
+
+.indie1 {
+  width: 40%;
+  height: 170px;
+  background-image: url(./../imges/indie3.webp);
+  background-size: cover;
+  margin-left: 855px;
+  margin-top: 30px;
+  border-radius: 20px;
+}
+.indie1 h1 {
+  color: white;
+  font-size: 45px;
+  font-family: "Oi", serif;
+  font-weight: 400;
+  font-style: normal;
+  padding-top: 30px;
+  padding-left: 10px;
+}
+.indie1 h3 {
+  color: white;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding-top: 20px;
+  padding-left: 10px;
 }
 
 @media screen and (min-device-width: 480px) and (max-device-width: 767px) {

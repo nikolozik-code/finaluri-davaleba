@@ -1,0 +1,14 @@
+@mixin title {
+    color: $titles;
+    font-family: "Roboto", sans-serif;
+    font-size: 200%;
+    margin-left: 41%;
+    margin-top: 20px;
+}
+@mixin title2 {
+    color: $title-selected;
+    font-family: "Roboto", sans-serif;
+    font-size: 200%;
+    margin-left: 2%;
+    margin-bottom: 20px;
+}
