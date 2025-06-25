@@ -1,11 +1,5 @@
-header {
-    height: 60px;
-     img {
-        width: 60px;}
-        #logo {
-        width: 50px;
-        margin-left: 0px;
-    }
+.header-1 {
+
     #x {
         display: none;
     }
@@ -16,8 +10,51 @@ header {
     font-variation-settings:
     "wdth" 100;
     padding-left: 10px;
-    padding-right: 10px;}
+    padding-right: 10px;
+display: none;}
      #tbc {
         margin-right: -10px;
+        display: none;
     }
+    #llogo {
+        display: inline-block;
+    }
+    i {
+        display: inline;
+        margin-left: 100%;
+    }
+    .cover {
+       .h1 {
+        font-size: 20%;
+       }
+    }
+
+}
+.ttop {
+    display: none;
+}
+.indie3 {
+    display: none;
+}
+.indie2 {
+    display: none;
+}
+.indie1 {
+    display: none;
+}
+#title2 {
+    display: none;
+}
+#genre {
+    display: none;
+}
+.title2 {
+    display: none;
+}
+
+    h4 {
+        display: none;
+    }
+.xcx, .lana, .neighbourhood, .tay, .bili, .chappel, .sabrina, .kendrik, .post {
+    margin-top: 20px;
 }

@@ -1,8 +1,12 @@
-header {
+.header-1 {
      img {
         width: 70px;}
         #logo {
         width: 60px;
+        padding-left: 70px;
+    }
+    #x {
+        display: none;
     }
     a {
     font-size: 17px;
@@ -10,9 +14,45 @@ header {
     font-style: normal;
     font-variation-settings:
     "wdth" 100;
-    padding-left: 30px;
-    padding-right: 30px;}
-     #tbc {
+    padding-left: 5px;
+    padding-right: 5px;}
+     
+    #tbc {
         margin-right: -30px;
     }
+}
+.indie3 {
+    padding-top: -20px;
+    h3 {
+        display: none;
+    }
+}
+#title2 {
+    display: none;
+}
+#genre {
+    display: none;
+}
+.ttop {
+    margin-top: 20px;
+}
+.ttop {
+    h1 {
+   margin-top: -30px;
+   margin-left: -30px;
+    }
+}
+.indie2 {
+    h3 {
+        display: none;
+    }
+}
+.indie1 {
+   overflow: hidden;
+   h1 {
+    margin-top: -30px;
+   }
+   h3 {
+    display: none;
+   }
 }

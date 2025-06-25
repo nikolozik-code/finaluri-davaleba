@@ -1,0 +1,44 @@
+html {
+    background-color:black
+}
+.header-1 {
+    height: 80px;
+    background-color: rgb(20, 20, 20);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    img {
+        width: 80px;
+        align-items: center;
+    }
+    #x {
+        width: 80px;
+        align-items: center;
+    }
+    #logo {
+        width: 70px;
+        padding-left: 10px;
+        margin-left: -40px;
+    }
+    a {text-decoration: none;
+    color: #b7b7b7;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    padding-left: 50px;
+    padding-right: 50px;}
+
+    #active {
+      color: #ffffff;
+      background-color: rgb(111, 111, 111);
+      border-radius: 20px;
+    }
+    #tbc {
+        margin-right: -50px;
+    }
+
+}
