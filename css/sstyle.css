@@ -1,0 +1,176 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  background-color: black;
+}
+
+.header-1 {
+  height: 80px;
+  background-color: rgb(20, 20, 20);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.header-1 img {
+  width: 80px;
+  align-items: center;
+}
+.header-1 #x {
+  width: 80px;
+  align-items: center;
+}
+.header-1 #logo {
+  width: 70px;
+  padding-left: 10px;
+  margin-left: -40px;
+}
+.header-1 #llogo {
+  display: none;
+  width: 70px;
+  padding-left: 10px;
+  margin-left: 20px;
+}
+.header-1 a {
+  text-decoration: none;
+  color: #b7b7b7;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.header-1 #active {
+  color: #ffffff;
+  background-color: rgb(111, 111, 111);
+  border-radius: 20px;
+}
+.header-1 #tbc {
+  margin-right: -50px;
+}
+.header-1 i {
+  display: none;
+}
+
+.card {
+  width: 90%;
+  height: 600px;
+  background: #525252;
+  background: linear-gradient(186deg, rgb(82, 82, 82) 0%, rgb(54, 54, 54) 39%);
+  margin-left: 5%;
+  margin-top: 40px;
+  border-radius: 50px;
+  overflow: hidden;
+}
+.card p {
+  text-align: center;
+  color: rgb(186, 186, 186);
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  padding-top: 5px;
+}
+.card .first {
+  padding-top: 230px;
+}
+
+@media screen and (min-device-width: 50px) and (max-device-width: 767px) {
+  .header-1 #x {
+    display: none;
+  }
+  .header-1 a {
+    font-size: 15px;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: none;
+  }
+  .header-1 #tbc {
+    margin-right: -10px;
+    display: none;
+  }
+  .header-1 #llogo {
+    display: inline;
+  }
+  .header-1 i {
+    display: inline;
+    margin-left: 100%;
+    color: white;
+    font-size: 20px;
+  }
+  .card p {
+    font-size: 20px;
+  }
+}
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .header-1 img {
+    width: 70px;
+  }
+  .header-1 #logo {
+    width: 60px;
+    padding-left: 70px;
+  }
+  .header-1 #x {
+    display: none;
+  }
+  .header-1 a {
+    font-size: 17px;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .header-1 #tbc {
+    margin-right: -30px;
+  }
+}/*# sourceMappingURL=sstyle.css.map */

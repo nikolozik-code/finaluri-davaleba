@@ -1,0 +1,15 @@
+@import "./../style/reset";
+@import "nmedia";
+@import "ncolor";
+@import "nfont";
+@import "nmixin";
+
+
+@import "news";
+
+@media #{$mobile} {
+    @import 'nmobile';
+}
+@media #{$tablet} {
+    @import 'ntablet';
+}

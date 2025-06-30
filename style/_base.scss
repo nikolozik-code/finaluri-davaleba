@@ -131,23 +131,46 @@ html {
       margin-left: 63%;
       margin-top: -197px;
       overflow: hidden;
-      background-color: rgb(183, 183, 183);
+      background-color: rgba(255, 255, 255, 0.567);
       border-radius: 10%;
+      display: none;
+
+     }
+      .view {
+        width: 30%;
+      height: 40%;
+      margin-left: 63%;
+      margin-top: 17px;
+      overflow: hidden;
+      background-color: rgba(255, 255, 255, 0.599);
+      border-radius: 10%;
+      display: none;
+      }
 
       p {
-        color: rgb(30, 30, 135);
+        color: rgb(24, 24, 24);
         text-align: center;
         padding-top: 40%;
         font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        display: none;
       }
     }
 }
-}
+
 .billie:hover {
     width: 300px;
     height: 220px;
     transition: 0.5s;
 
+ .download {
+    display: inline;
+
+
+    p {
+        display: inline;
+    }
+ }
 h2 {
     margin-left: -120px;
     transition: 0.5s;
@@ -164,42 +187,17 @@ h3 {
     }
 }
 .xcx {
-    width: 173px;
-    height: 220px;
+   @include cards;
     background: #826127;
 background: linear-gradient(0deg,rgba(130, 97, 39, 1) 29%, rgba(46, 184, 53, 1) 100%);
-    border-radius: 20px;
-    margin-left: 40px;
-    transition: 0.5s;
+
 
     h2 {
         color: $default-text-color;
-        font-family: "Roboto", sans-serif;
-        font-size: 14px;
-        padding-left: 2px;
-        margin-top: 5px;
-        text-align: center;
-        display:block;
-        transition: 0.5s;
     }
     h3 {
         color: $default-text-color;
-        font-family: "Roboto", sans-serif;
-        text-align: center;
-        padding-top: 6px;
-        display:block;
-        transition: 0.5s;
     }
-    img {
-        width: 155px;
-        height: 155px;
-        margin-left: 9px;
-        margin-top: 9px;
-        border-radius: 9%;
-        transition: 0.5s;
-    }
-    
-    
 }
 .xcx:hover {
     width: 300px;
@@ -222,39 +220,15 @@ h3 {
     }
 }
 .lana {
-    width: 173px;
-    height: 220px;
+    @include cards;
     background: #bababa;
 background: linear-gradient(0deg,rgba(186, 186, 186, 1) 12%, rgba(51, 189, 182, 1) 100%);
-    border-radius: 20px;
-    margin-left: 40px;
-    transition: 0.5s;
-
+   
     h2 {
         color: black;
-        font-family: "Roboto", sans-serif;
-        font-size: 14px;
-        padding-left: 2px;
-        margin-top: 5px;
-        text-align: center;
-        display:block;
-        transition: 0.5s;
     }
     h3 {
         color: black;
-        font-family: "Roboto", sans-serif;
-        text-align: center;
-        padding-top: 6px;
-        display:block;
-        transition: 0.5s;
-    }
-    img {
-        width: 155px;
-        height: 155px;
-        margin-left: 9px;
-        margin-top: 9px;
-        border-radius: 9%;
-        transition: 0.5s;
     }
     
     
@@ -280,38 +254,14 @@ h3 {
     }
 }
 .neighbourhood {
-    width: 173px;
-    height: 220px;
+  @include cards;
     background-color: rgb(50, 50, 50);
-    border-radius: 20px;
-    margin-left: 40px;
-    transition: 0.5s;
 
     h2 {
         color: $default-text-color;
-        font-family: "Roboto", sans-serif;
-        font-size: 14px;
-        padding-left: 2px;
-        margin-top: 5px;
-        text-align: center;
-        display:block;
-        transition: 0.5s;
     }
     h3 {
         color: $default-text-color;
-        font-family: "Roboto", sans-serif;
-        text-align: center;
-        padding-top: 6px;
-        display:block;
-        transition: 0.5s;
-    }
-    img {
-        width: 155px;
-        height: 155px;
-        margin-left: 9px;
-        margin-top: 9px;
-        border-radius: 9%;
-        transition: 0.5s;
     }
     
     
@@ -337,39 +287,15 @@ h3 {
     }
 }
 .tay {
-    width: 173px;
-    height: 220px;
+ @include cards;
 background: #e8e8e8;
 background: linear-gradient(141deg,rgba(232, 232, 232, 1) 13%, rgba(107, 107, 107, 1) 83%);
-    border-radius: 20px;
-    margin-left: 40px;
-    transition: 0.5s;
 
     h2 {
         color: black;
-        font-family: "Roboto", sans-serif;
-        font-size: 14px;
-        padding-left: 2px;
-        margin-top: 5px;
-        text-align: center;
-        display:block;
-        transition: 0.5s;
     }
     h3 {
         color: black;
-        font-family: "Roboto", sans-serif;
-        text-align: center;
-        padding-top: 6px;
-        display:block;
-        transition: 0.5s;
-    }
-    img {
-        width: 155px;
-        height: 155px;
-        margin-left: 9px;
-        margin-top: 9px;
-        border-radius: 9%;
-        transition: 0.5s;
     }
     
     
@@ -404,7 +330,12 @@ nav, ul, li {
     display: inline;
 
 ul {list-style: none;
-margin-top: 20px;}
+   margin-top: 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+    height: 120px;
+}
 
 a {text-decoration: none;
 color: $text;
@@ -415,8 +346,7 @@ margin-left: 35px;
 padding: 8px;
 background-color: #313131;
 border-radius: 10px;
-}
-}
+}}
 #title2 {
     @include title2;
 }
@@ -547,41 +477,16 @@ border-radius: 10px;
     transition: 0.5s;}
 
     .bili {
-    width: 173px;
-    height: 220px;
+ @include cards;
    background: #8cc474;
 background: linear-gradient(0deg,rgba(140, 196, 116, 1) 29%, rgba(140, 255, 240, 1) 100%);
-    border-radius: 20px;
-    margin-left: 40px;
-    transition: 0.5s;
 
     h2 {
         color: black;
-        font-family: "Roboto", sans-serif;
-        font-size: 14px;
-        padding-left: 2px;
-        margin-top: 5px;
-        text-align: center;
-        display:block;
-        transition: 0.5s;
     }
     h3 {
         color: black;
-        font-family: "Roboto", sans-serif;
-        text-align: center;
-        padding-top: 6px;
-        display:block;
-        transition: 0.5s;
     }
-    img {
-        width: 155px;
-        height: 155px;
-        margin-left: 9px;
-        margin-top: 9px;
-        border-radius: 9%;
-        transition: 0.5s;
-    }
-    
     
 }
 
@@ -606,41 +511,17 @@ h3 {
     }
 }
 .chappel {
-    width: 173px;
-    height: 220px;
+@include cards;
     background: #E6D5CB;
 background: linear-gradient(180deg,rgba(230, 213, 203, 1) 55%, rgba(245, 88, 49, 1) 100%);
-    border-radius: 20px;
-    margin-left: 40px;
-    transition: 0.5s;
+
 
     h2 {
         color: black;
-        font-family: "Roboto", sans-serif;
-        font-size: 14px;
-        padding-left: 2px;
-        margin-top: 5px;
-        text-align: center;
-        display:block;
-        transition: 0.5s;
     }
     h3 {
         color: black;
-        font-family: "Roboto", sans-serif;
-        text-align: center;
-        padding-top: 6px;
-        display:block;
-        transition: 0.5s;
-    }
-    img {
-        width: 155px;
-        height: 155px;
-        margin-left: 9px;
-        margin-top: 9px;
-        border-radius: 9%;
-        transition: 0.5s;
-    }
-    
+    }  
     
 }
 .chappel:hover {
@@ -664,39 +545,16 @@ h3 {
     }
 }
 .sabrina {
-    width: 173px;
-    height: 220px;
+ @include cards;
     background: #69b1ff;
 background: linear-gradient(141deg,rgba(105, 177, 255, 1) 35%, rgba(92, 92, 92, 1) 100%);
-    border-radius: 20px;
-    margin-left: 40px;
-    transition: 0.5s;
+   
 
     h2 {
         color: black;
-        font-family: "Roboto", sans-serif;
-        font-size: 14px;
-        padding-left: 2px;
-        margin-top: 5px;
-        text-align: center;
-        display:block;
-        transition: 0.5s;
     }
     h3 {
         color: black;
-        font-family: "Roboto", sans-serif;
-        text-align: center;
-        padding-top: 6px;
-        display:block;
-        transition: 0.5s;
-    }
-    img {
-        width: 155px;
-        height: 155px;
-        margin-left: 9px;
-        margin-top: 9px;
-        border-radius: 9%;
-        transition: 0.5s;
     }
     
     
@@ -722,40 +580,16 @@ h3 {
     }
 }
 .kendrik {
-    width: 173px;
-    height: 220px;
+@include cards;
     background: #d9d9d9;
 background: linear-gradient(350deg,rgba(217, 217, 217, 1) 0%, rgba(186, 43, 43, 1) 39%);
-    border-radius: 20px;
-    margin-left: 40px;
-    transition: 0.5s;
 
 
     h2 {
         color: black;
-        font-family: "Roboto", sans-serif;
-        font-size: 14px;
-        padding-left: 2px;
-        margin-top: 5px;
-        text-align: center;
-        display:block;
-        transition: 0.5s;
     }
     h3 {
         color: black;
-        font-family: "Roboto", sans-serif;
-        text-align: center;
-        padding-top: 6px;
-        display:block;
-        transition: 0.5s;
-    }
-    img {
-        width: 155px;
-        height: 155px;
-        margin-left: 9px;
-        margin-top: 9px;
-        border-radius: 9%;
-        transition: 0.5s;
     }
     
     
@@ -782,39 +616,15 @@ h3 {
     }
 }
 .post {
-    width: 173px;
-    height: 220px;
+@include cards;
 background: #96b6d6;
 background: linear-gradient(180deg,rgba(150, 182, 214, 1) 0%, rgba(150, 182, 214, 1) 100%);
-    border-radius: 20px;
-    margin-left: 40px;
-    transition: 0.5s;
 
     h2 {
         color: black;
-        font-family: "Roboto", sans-serif;
-        font-size: 14px;
-        padding-left: 2px;
-        margin-top: 5px;
-        text-align: center;
-        display:block;
-        transition: 0.5s;
     }
     h3 {
         color: black;
-        font-family: "Roboto", sans-serif;
-        text-align: center;
-        padding-top: 6px;
-        display:block;
-        transition: 0.5s;
-    }
-    img {
-        width: 155px;
-        height: 155px;
-        margin-left: 9px;
-        margin-top: 9px;
-        border-radius: 9%;
-        transition: 0.5s;
     }
     
     

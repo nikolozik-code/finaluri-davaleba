@@ -1,0 +1,15 @@
+@import "./../style/reset";
+@import "semedia";
+@import "secolor";
+@import "sefont";
+@import "semixin";
+
+
+@import "services";
+
+@media #{$mobile} {
+    @import 'semobile';
+}
+@media #{$tablet} {
+    @import 'setablet';
+}

@@ -1,0 +1,92 @@
+html {
+    background-color:black
+}
+.header-1 {
+    height: 80px;
+    background-color: rgb(20, 20, 20);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+
+    img {
+        width: 80px;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+    #x {
+        width: 80px;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+    #logo {
+        width: 70px;
+        padding-left: 10px;
+        margin-left: -40px;
+    }
+    #llogo {
+        display: none;
+        width: 70px;
+        padding-left: 10px;
+        margin-left: 20px;
+    }
+    a {text-decoration: none;
+    color: #b7b7b7;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    padding-left: 50px;
+    padding-right: 50px;}
+
+    #active {
+      color: #ffffff;
+      background-color: rgb(111, 111, 111);
+      border-radius: 20px;
+    }
+    #tbc {
+        margin-right: -50px;
+    }
+    i {
+        display: none;
+    }
+
+}
+
+.card {
+    width: 90%;
+    height: 300px;
+    background: #2A7B9B;
+    background: -webkit-gradient(linear,left top, right top,from(rgba(42, 123, 155, 1)), color-stop(42%, rgba(149, 87, 199, 1)), to(rgba(237, 168, 83, 1)));
+    background: -o-linear-gradient(left,rgba(42, 123, 155, 1) 0%, rgba(149, 87, 199, 1) 42%, rgba(237, 168, 83, 1) 100%);
+    background: linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(149, 87, 199, 1) 42%, rgba(237, 168, 83, 1) 100%);    margin-left: 5%;
+    margin-top: 40px;
+    border-radius: 50px;
+    overflow: hidden;
+
+    p {
+        text-align: center;
+        color: $card-fexf-color;
+        font-family: "Roboto", sans-serif;
+        font-size: 30px;
+        padding-top: 10px;
+    }
+    .first {
+        padding-top: 50px;
+    }
+}
+.end {  
+        text-align: center;
+         color: $card-fexf-color;
+        font-family: "Roboto", sans-serif;
+        font-size: 20px;
+        margin-top: 50px;
+}

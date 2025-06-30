@@ -182,20 +182,39 @@ html {
   margin-left: 63%;
   margin-top: -197px;
   overflow: hidden;
-  background-color: rgb(183, 183, 183);
+  background-color: rgba(255, 255, 255, 0.567);
   border-radius: 10%;
+  display: none;
 }
-.albums .billie .download p {
-  color: rgb(30, 30, 135);
+.albums .billie .view {
+  width: 30%;
+  height: 40%;
+  margin-left: 63%;
+  margin-top: 17px;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.599);
+  border-radius: 10%;
+  display: none;
+}
+.albums .billie p {
+  color: rgb(24, 24, 24);
   text-align: center;
   padding-top: 40%;
   font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  display: none;
 }
 
 .billie:hover {
   width: 300px;
   height: 220px;
   transition: 0.5s;
+}
+.billie:hover .download {
+  display: inline;
+}
+.billie:hover .download p {
+  display: inline;
 }
 .billie:hover h2 {
   margin-left: -120px;
@@ -214,11 +233,11 @@ html {
 .xcx {
   width: 173px;
   height: 220px;
-  background: #826127;
-  background: linear-gradient(0deg, rgb(130, 97, 39) 29%, rgb(46, 184, 53) 100%);
   border-radius: 20px;
   margin-left: 40px;
   transition: 0.5s;
+  background: #826127;
+  background: linear-gradient(0deg, rgb(130, 97, 39) 29%, rgb(46, 184, 53) 100%);
 }
 .xcx h2 {
   color: rgb(202, 202, 202);
@@ -246,6 +265,12 @@ html {
   border-radius: 9%;
   transition: 0.5s;
 }
+.xcx h2 {
+  color: rgb(202, 202, 202);
+}
+.xcx h3 {
+  color: rgb(202, 202, 202);
+}
 
 .xcx:hover {
   width: 300px;
@@ -269,14 +294,14 @@ html {
 .lana {
   width: 173px;
   height: 220px;
-  background: #bababa;
-  background: linear-gradient(0deg, rgb(186, 186, 186) 12%, rgb(51, 189, 182) 100%);
   border-radius: 20px;
   margin-left: 40px;
   transition: 0.5s;
+  background: #bababa;
+  background: linear-gradient(0deg, rgb(186, 186, 186) 12%, rgb(51, 189, 182) 100%);
 }
 .lana h2 {
-  color: black;
+  color: rgb(202, 202, 202);
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   padding-left: 2px;
@@ -286,7 +311,7 @@ html {
   transition: 0.5s;
 }
 .lana h3 {
-  color: black;
+  color: rgb(202, 202, 202);
   font-family: "Roboto", sans-serif;
   text-align: center;
   padding-top: 6px;
@@ -300,6 +325,12 @@ html {
   margin-top: 9px;
   border-radius: 9%;
   transition: 0.5s;
+}
+.lana h2 {
+  color: black;
+}
+.lana h3 {
+  color: black;
 }
 
 .lana:hover {
@@ -324,10 +355,10 @@ html {
 .neighbourhood {
   width: 173px;
   height: 220px;
-  background-color: rgb(50, 50, 50);
   border-radius: 20px;
   margin-left: 40px;
   transition: 0.5s;
+  background-color: rgb(50, 50, 50);
 }
 .neighbourhood h2 {
   color: rgb(202, 202, 202);
@@ -355,6 +386,12 @@ html {
   border-radius: 9%;
   transition: 0.5s;
 }
+.neighbourhood h2 {
+  color: rgb(202, 202, 202);
+}
+.neighbourhood h3 {
+  color: rgb(202, 202, 202);
+}
 
 .neighbourhood:hover {
   width: 300px;
@@ -378,14 +415,14 @@ html {
 .tay {
   width: 173px;
   height: 220px;
-  background: #e8e8e8;
-  background: linear-gradient(141deg, rgb(232, 232, 232) 13%, rgb(107, 107, 107) 83%);
   border-radius: 20px;
   margin-left: 40px;
   transition: 0.5s;
+  background: #e8e8e8;
+  background: linear-gradient(141deg, rgb(232, 232, 232) 13%, rgb(107, 107, 107) 83%);
 }
 .tay h2 {
-  color: black;
+  color: rgb(202, 202, 202);
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   padding-left: 2px;
@@ -395,7 +432,7 @@ html {
   transition: 0.5s;
 }
 .tay h3 {
-  color: black;
+  color: rgb(202, 202, 202);
   font-family: "Roboto", sans-serif;
   text-align: center;
   padding-top: 6px;
@@ -409,6 +446,12 @@ html {
   margin-top: 9px;
   border-radius: 9%;
   transition: 0.5s;
+}
+.tay h2 {
+  color: black;
+}
+.tay h3 {
+  color: black;
 }
 
 .tay:hover {
@@ -446,6 +489,9 @@ nav, ul, li {
 nav ul, ul ul, li ul {
   list-style: none;
   margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  height: 120px;
 }
 nav a, ul a, li a {
   text-decoration: none;
@@ -606,14 +652,14 @@ nav a, ul a, li a {
 .bili {
   width: 173px;
   height: 220px;
-  background: #8cc474;
-  background: linear-gradient(0deg, rgb(140, 196, 116) 29%, rgb(140, 255, 240) 100%);
   border-radius: 20px;
   margin-left: 40px;
   transition: 0.5s;
+  background: #8cc474;
+  background: linear-gradient(0deg, rgb(140, 196, 116) 29%, rgb(140, 255, 240) 100%);
 }
 .bili h2 {
-  color: black;
+  color: rgb(202, 202, 202);
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   padding-left: 2px;
@@ -623,7 +669,7 @@ nav a, ul a, li a {
   transition: 0.5s;
 }
 .bili h3 {
-  color: black;
+  color: rgb(202, 202, 202);
   font-family: "Roboto", sans-serif;
   text-align: center;
   padding-top: 6px;
@@ -637,6 +683,12 @@ nav a, ul a, li a {
   margin-top: 9px;
   border-radius: 9%;
   transition: 0.5s;
+}
+.bili h2 {
+  color: black;
+}
+.bili h3 {
+  color: black;
 }
 
 .bili:hover {
@@ -661,14 +713,14 @@ nav a, ul a, li a {
 .chappel {
   width: 173px;
   height: 220px;
-  background: #E6D5CB;
-  background: linear-gradient(180deg, rgb(230, 213, 203) 55%, rgb(245, 88, 49) 100%);
   border-radius: 20px;
   margin-left: 40px;
   transition: 0.5s;
+  background: #E6D5CB;
+  background: linear-gradient(180deg, rgb(230, 213, 203) 55%, rgb(245, 88, 49) 100%);
 }
 .chappel h2 {
-  color: black;
+  color: rgb(202, 202, 202);
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   padding-left: 2px;
@@ -678,7 +730,7 @@ nav a, ul a, li a {
   transition: 0.5s;
 }
 .chappel h3 {
-  color: black;
+  color: rgb(202, 202, 202);
   font-family: "Roboto", sans-serif;
   text-align: center;
   padding-top: 6px;
@@ -692,6 +744,12 @@ nav a, ul a, li a {
   margin-top: 9px;
   border-radius: 9%;
   transition: 0.5s;
+}
+.chappel h2 {
+  color: black;
+}
+.chappel h3 {
+  color: black;
 }
 
 .chappel:hover {
@@ -716,14 +774,14 @@ nav a, ul a, li a {
 .sabrina {
   width: 173px;
   height: 220px;
-  background: #69b1ff;
-  background: linear-gradient(141deg, rgb(105, 177, 255) 35%, rgb(92, 92, 92) 100%);
   border-radius: 20px;
   margin-left: 40px;
   transition: 0.5s;
+  background: #69b1ff;
+  background: linear-gradient(141deg, rgb(105, 177, 255) 35%, rgb(92, 92, 92) 100%);
 }
 .sabrina h2 {
-  color: black;
+  color: rgb(202, 202, 202);
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   padding-left: 2px;
@@ -733,7 +791,7 @@ nav a, ul a, li a {
   transition: 0.5s;
 }
 .sabrina h3 {
-  color: black;
+  color: rgb(202, 202, 202);
   font-family: "Roboto", sans-serif;
   text-align: center;
   padding-top: 6px;
@@ -747,6 +805,12 @@ nav a, ul a, li a {
   margin-top: 9px;
   border-radius: 9%;
   transition: 0.5s;
+}
+.sabrina h2 {
+  color: black;
+}
+.sabrina h3 {
+  color: black;
 }
 
 .sabrina:hover {
@@ -771,14 +835,14 @@ nav a, ul a, li a {
 .kendrik {
   width: 173px;
   height: 220px;
-  background: #d9d9d9;
-  background: linear-gradient(350deg, rgb(217, 217, 217) 0%, rgb(186, 43, 43) 39%);
   border-radius: 20px;
   margin-left: 40px;
   transition: 0.5s;
+  background: #d9d9d9;
+  background: linear-gradient(350deg, rgb(217, 217, 217) 0%, rgb(186, 43, 43) 39%);
 }
 .kendrik h2 {
-  color: black;
+  color: rgb(202, 202, 202);
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   padding-left: 2px;
@@ -788,7 +852,7 @@ nav a, ul a, li a {
   transition: 0.5s;
 }
 .kendrik h3 {
-  color: black;
+  color: rgb(202, 202, 202);
   font-family: "Roboto", sans-serif;
   text-align: center;
   padding-top: 6px;
@@ -802,6 +866,12 @@ nav a, ul a, li a {
   margin-top: 9px;
   border-radius: 9%;
   transition: 0.5s;
+}
+.kendrik h2 {
+  color: black;
+}
+.kendrik h3 {
+  color: black;
 }
 
 .kendrik:hover {
@@ -826,14 +896,14 @@ nav a, ul a, li a {
 .post {
   width: 173px;
   height: 220px;
-  background: #96b6d6;
-  background: linear-gradient(180deg, rgb(150, 182, 214) 0%, rgb(150, 182, 214) 100%);
   border-radius: 20px;
   margin-left: 40px;
   transition: 0.5s;
+  background: #96b6d6;
+  background: linear-gradient(180deg, rgb(150, 182, 214) 0%, rgb(150, 182, 214) 100%);
 }
 .post h2 {
-  color: black;
+  color: rgb(202, 202, 202);
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   padding-left: 2px;
@@ -843,7 +913,7 @@ nav a, ul a, li a {
   transition: 0.5s;
 }
 .post h3 {
-  color: black;
+  color: rgb(202, 202, 202);
   font-family: "Roboto", sans-serif;
   text-align: center;
   padding-top: 6px;
@@ -857,6 +927,12 @@ nav a, ul a, li a {
   margin-top: 9px;
   border-radius: 9%;
   transition: 0.5s;
+}
+.post h2 {
+  color: black;
+}
+.post h3 {
+  color: black;
 }
 
 .post:hover {

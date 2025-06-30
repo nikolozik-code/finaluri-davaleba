@@ -1,0 +1,13 @@
+@import "./../style/reset";
+@import "smedia";
+@import "scolor";
+
+@import "support";
+
+
+@media #{$mobile} {
+    @import 'smobile';
+}
+@media #{$tablet} {
+    @import 'stablet';
+}
