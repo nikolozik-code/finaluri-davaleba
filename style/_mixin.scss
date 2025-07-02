@@ -12,19 +12,49 @@
     margin-left: 2%;
     margin-bottom: 20px;
 }
+@mixin hover {
+    width: 221px;
+    height: 220px;
+    transition: 0.5s;
+
+ .download {
+    display: inline;
+
+
+    p {
+        display: inline;
+    }
+ }
+h2 {
+
+    transition: 0.5s;
+}
+h3 {
+
+    transition: 0.5s;
+}
+
+    img {
+        margin-left: 10px;
+        width: 200px;
+        height: 200px;
+        transition: 0,5s;
+    }
+}
 @mixin cards {
      width: 173px;
     height: 220px;
     border-radius: 20px;
     margin-left: 40px;
     transition: 0.5s;
+    overflow: hidden;
 
     h2 {
         color: $default-text-color;
         font-family: "Roboto", sans-serif;
         font-size: 14px;
         padding-left: 2px;
-        margin-top: 5px;
+        margin-top: 8px;
         text-align: center;
         display:block;
         transition: 0.5s;

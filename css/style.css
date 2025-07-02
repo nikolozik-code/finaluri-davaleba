@@ -127,7 +127,7 @@ html {
   padding-top: 100px;
 }
 
-#title {
+.title {
   color: rgba(255, 255, 255, 0.718);
   font-family: "Roboto", sans-serif;
   font-size: 200%;
@@ -142,20 +142,21 @@ html {
   justify-content: space-around;
 }
 .albums .billie {
-  width: 173px;
-  height: 220px;
   background: #0e1545;
   background: linear-gradient(0deg, rgb(14, 21, 69) 22%, rgb(25, 25, 94) 100%);
+  width: 173px;
+  height: 220px;
   border-radius: 20px;
   margin-left: 40px;
   transition: 0.5s;
+  overflow: hidden;
 }
 .albums .billie h2 {
   color: rgb(202, 202, 202);
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   padding-left: 2px;
-  margin-top: 5px;
+  margin-top: 8px;
   text-align: center;
   display: block;
   transition: 0.5s;
@@ -176,37 +177,18 @@ html {
   border-radius: 9%;
   transition: 0.5s;
 }
-.albums .billie .download {
-  width: 30%;
-  height: 40%;
-  margin-left: 63%;
-  margin-top: -197px;
-  overflow: hidden;
-  background-color: rgba(255, 255, 255, 0.567);
-  border-radius: 10%;
-  display: none;
+.albums .billie h2 {
+  color: rgb(202, 202, 202);
 }
-.albums .billie .view {
-  width: 30%;
-  height: 40%;
-  margin-left: 63%;
-  margin-top: 17px;
-  overflow: hidden;
-  background-color: rgba(255, 255, 255, 0.599);
-  border-radius: 10%;
-  display: none;
+.albums .billie h3 {
+  color: rgb(202, 202, 202);
 }
 .albums .billie p {
   color: rgb(24, 24, 24);
-  text-align: center;
-  padding-top: 40%;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  display: none;
 }
 
 .billie:hover {
-  width: 300px;
+  width: 221px;
   height: 220px;
   transition: 0.5s;
 }
@@ -217,16 +199,15 @@ html {
   display: inline;
 }
 .billie:hover h2 {
-  margin-left: -120px;
   transition: 0.5s;
 }
 .billie:hover h3 {
-  margin-left: -120px;
   transition: 0.5s;
 }
 .billie:hover img {
-  width: 160px;
-  height: 160px;
+  margin-left: 10px;
+  width: 200px;
+  height: 200px;
   transition: 0, 5s;
 }
 
@@ -236,6 +217,7 @@ html {
   border-radius: 20px;
   margin-left: 40px;
   transition: 0.5s;
+  overflow: hidden;
   background: #826127;
   background: linear-gradient(0deg, rgb(130, 97, 39) 29%, rgb(46, 184, 53) 100%);
 }
@@ -244,7 +226,7 @@ html {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   padding-left: 2px;
-  margin-top: 5px;
+  margin-top: 8px;
   text-align: center;
   display: block;
   transition: 0.5s;
@@ -273,21 +255,26 @@ html {
 }
 
 .xcx:hover {
-  width: 300px;
+  width: 221px;
   height: 220px;
   transition: 0.5s;
 }
+.xcx:hover .download {
+  display: inline;
+}
+.xcx:hover .download p {
+  display: inline;
+}
 .xcx:hover h2 {
-  margin-left: -120px;
   transition: 0.5s;
 }
 .xcx:hover h3 {
-  margin-left: -120px;
   transition: 0.5s;
 }
 .xcx:hover img {
-  width: 160px;
-  height: 160px;
+  margin-left: 10px;
+  width: 200px;
+  height: 200px;
   transition: 0, 5s;
 }
 
@@ -297,6 +284,7 @@ html {
   border-radius: 20px;
   margin-left: 40px;
   transition: 0.5s;
+  overflow: hidden;
   background: #bababa;
   background: linear-gradient(0deg, rgb(186, 186, 186) 12%, rgb(51, 189, 182) 100%);
 }
@@ -305,7 +293,7 @@ html {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   padding-left: 2px;
-  margin-top: 5px;
+  margin-top: 8px;
   text-align: center;
   display: block;
   transition: 0.5s;
@@ -334,21 +322,26 @@ html {
 }
 
 .lana:hover {
-  width: 300px;
+  width: 221px;
   height: 220px;
   transition: 0.5s;
 }
+.lana:hover .download {
+  display: inline;
+}
+.lana:hover .download p {
+  display: inline;
+}
 .lana:hover h2 {
-  margin-left: -120px;
   transition: 0.5s;
 }
 .lana:hover h3 {
-  margin-left: -120px;
   transition: 0.5s;
 }
 .lana:hover img {
-  width: 160px;
-  height: 160px;
+  margin-left: 10px;
+  width: 200px;
+  height: 200px;
   transition: 0, 5s;
 }
 
@@ -358,6 +351,7 @@ html {
   border-radius: 20px;
   margin-left: 40px;
   transition: 0.5s;
+  overflow: hidden;
   background-color: rgb(50, 50, 50);
 }
 .neighbourhood h2 {
@@ -365,7 +359,7 @@ html {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   padding-left: 2px;
-  margin-top: 5px;
+  margin-top: 8px;
   text-align: center;
   display: block;
   transition: 0.5s;
@@ -394,21 +388,26 @@ html {
 }
 
 .neighbourhood:hover {
-  width: 300px;
+  width: 221px;
   height: 220px;
   transition: 0.5s;
 }
+.neighbourhood:hover .download {
+  display: inline;
+}
+.neighbourhood:hover .download p {
+  display: inline;
+}
 .neighbourhood:hover h2 {
-  margin-left: -120px;
   transition: 0.5s;
 }
 .neighbourhood:hover h3 {
-  margin-left: -120px;
   transition: 0.5s;
 }
 .neighbourhood:hover img {
-  width: 160px;
-  height: 160px;
+  margin-left: 10px;
+  width: 200px;
+  height: 200px;
   transition: 0, 5s;
 }
 
@@ -418,6 +417,7 @@ html {
   border-radius: 20px;
   margin-left: 40px;
   transition: 0.5s;
+  overflow: hidden;
   background: #e8e8e8;
   background: linear-gradient(141deg, rgb(232, 232, 232) 13%, rgb(107, 107, 107) 83%);
 }
@@ -426,7 +426,7 @@ html {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   padding-left: 2px;
-  margin-top: 5px;
+  margin-top: 8px;
   text-align: center;
   display: block;
   transition: 0.5s;
@@ -455,21 +455,26 @@ html {
 }
 
 .tay:hover {
-  width: 300px;
+  width: 221px;
   height: 220px;
   transition: 0.5s;
 }
+.tay:hover .download {
+  display: inline;
+}
+.tay:hover .download p {
+  display: inline;
+}
 .tay:hover h2 {
-  margin-left: -120px;
   transition: 0.5s;
 }
 .tay:hover h3 {
-  margin-left: -120px;
   transition: 0.5s;
 }
 .tay:hover img {
-  width: 160px;
-  height: 160px;
+  margin-left: 10px;
+  width: 200px;
+  height: 200px;
   transition: 0, 5s;
 }
 
@@ -655,6 +660,7 @@ nav a, ul a, li a {
   border-radius: 20px;
   margin-left: 40px;
   transition: 0.5s;
+  overflow: hidden;
   background: #8cc474;
   background: linear-gradient(0deg, rgb(140, 196, 116) 29%, rgb(140, 255, 240) 100%);
 }
@@ -663,7 +669,7 @@ nav a, ul a, li a {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   padding-left: 2px;
-  margin-top: 5px;
+  margin-top: 8px;
   text-align: center;
   display: block;
   transition: 0.5s;
@@ -692,21 +698,26 @@ nav a, ul a, li a {
 }
 
 .bili:hover {
-  width: 300px;
+  width: 221px;
   height: 220px;
   transition: 0.5s;
 }
+.bili:hover .download {
+  display: inline;
+}
+.bili:hover .download p {
+  display: inline;
+}
 .bili:hover h2 {
-  margin-left: -120px;
   transition: 0.5s;
 }
 .bili:hover h3 {
-  margin-left: -120px;
   transition: 0.5s;
 }
 .bili:hover img {
-  width: 160px;
-  height: 160px;
+  margin-left: 10px;
+  width: 200px;
+  height: 200px;
   transition: 0, 5s;
 }
 
@@ -716,6 +727,7 @@ nav a, ul a, li a {
   border-radius: 20px;
   margin-left: 40px;
   transition: 0.5s;
+  overflow: hidden;
   background: #E6D5CB;
   background: linear-gradient(180deg, rgb(230, 213, 203) 55%, rgb(245, 88, 49) 100%);
 }
@@ -724,7 +736,7 @@ nav a, ul a, li a {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   padding-left: 2px;
-  margin-top: 5px;
+  margin-top: 8px;
   text-align: center;
   display: block;
   transition: 0.5s;
@@ -753,21 +765,26 @@ nav a, ul a, li a {
 }
 
 .chappel:hover {
-  width: 300px;
+  width: 221px;
   height: 220px;
   transition: 0.5s;
 }
+.chappel:hover .download {
+  display: inline;
+}
+.chappel:hover .download p {
+  display: inline;
+}
 .chappel:hover h2 {
-  margin-left: -120px;
   transition: 0.5s;
 }
 .chappel:hover h3 {
-  margin-left: -120px;
   transition: 0.5s;
 }
 .chappel:hover img {
-  width: 160px;
-  height: 160px;
+  margin-left: 10px;
+  width: 200px;
+  height: 200px;
   transition: 0, 5s;
 }
 
@@ -777,6 +794,7 @@ nav a, ul a, li a {
   border-radius: 20px;
   margin-left: 40px;
   transition: 0.5s;
+  overflow: hidden;
   background: #69b1ff;
   background: linear-gradient(141deg, rgb(105, 177, 255) 35%, rgb(92, 92, 92) 100%);
 }
@@ -785,7 +803,7 @@ nav a, ul a, li a {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   padding-left: 2px;
-  margin-top: 5px;
+  margin-top: 8px;
   text-align: center;
   display: block;
   transition: 0.5s;
@@ -814,21 +832,26 @@ nav a, ul a, li a {
 }
 
 .sabrina:hover {
-  width: 300px;
+  width: 221px;
   height: 220px;
   transition: 0.5s;
 }
+.sabrina:hover .download {
+  display: inline;
+}
+.sabrina:hover .download p {
+  display: inline;
+}
 .sabrina:hover h2 {
-  margin-left: -120px;
   transition: 0.5s;
 }
 .sabrina:hover h3 {
-  margin-left: -120px;
   transition: 0.5s;
 }
 .sabrina:hover img {
-  width: 160px;
-  height: 160px;
+  margin-left: 10px;
+  width: 200px;
+  height: 200px;
   transition: 0, 5s;
 }
 
@@ -838,6 +861,7 @@ nav a, ul a, li a {
   border-radius: 20px;
   margin-left: 40px;
   transition: 0.5s;
+  overflow: hidden;
   background: #d9d9d9;
   background: linear-gradient(350deg, rgb(217, 217, 217) 0%, rgb(186, 43, 43) 39%);
 }
@@ -846,7 +870,7 @@ nav a, ul a, li a {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   padding-left: 2px;
-  margin-top: 5px;
+  margin-top: 8px;
   text-align: center;
   display: block;
   transition: 0.5s;
@@ -875,21 +899,26 @@ nav a, ul a, li a {
 }
 
 .kendrik:hover {
-  width: 300px;
+  width: 221px;
   height: 220px;
   transition: 0.5s;
 }
+.kendrik:hover .download {
+  display: inline;
+}
+.kendrik:hover .download p {
+  display: inline;
+}
 .kendrik:hover h2 {
-  margin-left: -120px;
   transition: 0.5s;
 }
 .kendrik:hover h3 {
-  margin-left: -120px;
   transition: 0.5s;
 }
 .kendrik:hover img {
-  width: 160px;
-  height: 160px;
+  margin-left: 10px;
+  width: 200px;
+  height: 200px;
   transition: 0, 5s;
 }
 
@@ -899,6 +928,7 @@ nav a, ul a, li a {
   border-radius: 20px;
   margin-left: 40px;
   transition: 0.5s;
+  overflow: hidden;
   background: #96b6d6;
   background: linear-gradient(180deg, rgb(150, 182, 214) 0%, rgb(150, 182, 214) 100%);
 }
@@ -907,7 +937,7 @@ nav a, ul a, li a {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   padding-left: 2px;
-  margin-top: 5px;
+  margin-top: 8px;
   text-align: center;
   display: block;
   transition: 0.5s;
@@ -936,21 +966,26 @@ nav a, ul a, li a {
 }
 
 .post:hover {
-  width: 300px;
+  width: 221px;
   height: 220px;
   transition: 0.5s;
 }
+.post:hover .download {
+  display: inline;
+}
+.post:hover .download p {
+  display: inline;
+}
 .post:hover h2 {
-  margin-left: -120px;
   transition: 0.5s;
 }
 .post:hover h3 {
-  margin-left: -120px;
   transition: 0.5s;
 }
 .post:hover img {
-  width: 160px;
-  height: 160px;
+  margin-left: 10px;
+  width: 200px;
+  height: 200px;
   transition: 0, 5s;
 }
 

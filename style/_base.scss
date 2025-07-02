@@ -78,7 +78,7 @@ html {
         padding-top: 100px
     }
 }
-#title {
+.title {
 @include title;
 }
 .albums {
@@ -88,103 +88,26 @@ html {
     justify-content: space-around;
 
 .billie {
-    width: 173px;
-    height: 220px;
     background: #0e1545;
     background: linear-gradient(0deg,rgba(14, 21, 69, 1) 22%, rgba(25, 25, 94, 1) 100%);
-    border-radius: 20px;
-    margin-left: 40px;
-    transition: 0.5s;
-
+    @include cards;
    
 
     h2 {
         color: $default-text-color;
-        font-family: "Roboto", sans-serif;
-        font-size: 14px;
-        padding-left: 2px;
-        margin-top: 5px;
-        text-align: center;
-        display:block;
-        transition: 0.5s;
     }
     h3 {
         color: $default-text-color;
-        font-family: "Roboto", sans-serif;
-        text-align: center;
-        padding-top: 6px;
-        display:block;
-        transition: 0.5s;
     }
-    img {
-        width: 155px;
-        height: 155px;
-        margin-left: 9px;
-        margin-top: 9px;
-        border-radius: 9%;
-        transition: 0.5s;
-    }
-    
-     .download {
-        width: 30%;
-      height: 40%;
-      margin-left: 63%;
-      margin-top: -197px;
-      overflow: hidden;
-      background-color: rgba(255, 255, 255, 0.567);
-      border-radius: 10%;
-      display: none;
-
-     }
-      .view {
-        width: 30%;
-      height: 40%;
-      margin-left: 63%;
-      margin-top: 17px;
-      overflow: hidden;
-      background-color: rgba(255, 255, 255, 0.599);
-      border-radius: 10%;
-      display: none;
-      }
 
       p {
         color: rgb(24, 24, 24);
-        text-align: center;
-        padding-top: 40%;
-        font-family: "Roboto", sans-serif;
-        font-weight: 400;
-        display: none;
       }
     }
 }
 
 .billie:hover {
-    width: 300px;
-    height: 220px;
-    transition: 0.5s;
-
- .download {
-    display: inline;
-
-
-    p {
-        display: inline;
-    }
- }
-h2 {
-    margin-left: -120px;
-    transition: 0.5s;
-}
-h3 {
-    margin-left: -120px;
-    transition: 0.5s;
-}
-
-    img {
-        width: 160px;
-        height: 160px;
-        transition: 0,5s;
-    }
+    @include hover;
 }
 .xcx {
    @include cards;
@@ -200,24 +123,7 @@ background: linear-gradient(0deg,rgba(130, 97, 39, 1) 29%, rgba(46, 184, 53, 1) 
     }
 }
 .xcx:hover {
-    width: 300px;
-    height: 220px;
-    transition: 0.5s;
-
-h2 {
-    margin-left: -120px;
-    transition: 0.5s;
-}
-h3 {
-    margin-left: -120px;
-    transition: 0.5s;
-}
-
-    img {
-        width: 160px;
-        height: 160px;
-        transition: 0,5s;
-    }
+    @include hover;
 }
 .lana {
     @include cards;
@@ -234,24 +140,7 @@ background: linear-gradient(0deg,rgba(186, 186, 186, 1) 12%, rgba(51, 189, 182, 
     
 }
 .lana:hover {
-    width: 300px;
-    height: 220px;
-    transition: 0.5s;
-
-h2 {
-    margin-left: -120px;
-    transition: 0.5s;
-}
-h3 {
-    margin-left: -120px;
-    transition: 0.5s;
-}
-
-    img {
-        width: 160px;
-        height: 160px;
-        transition: 0,5s;
-    }
+    @include hover;
 }
 .neighbourhood {
   @include cards;
@@ -267,24 +156,7 @@ h3 {
     
 }
 .neighbourhood:hover {
-    width: 300px;
-    height: 220px;
-    transition: 0.5s;
-
-h2 {
-    margin-left: -120px;
-    transition: 0.5s;
-}
-h3 {
-    margin-left: -120px;
-    transition: 0.5s;
-}
-
-    img {
-        width: 160px;
-        height: 160px;
-        transition: 0,5s;
-    }
+    @include hover;
 }
 .tay {
  @include cards;
@@ -301,24 +173,7 @@ background: linear-gradient(141deg,rgba(232, 232, 232, 1) 13%, rgba(107, 107, 10
     
 }
 .tay:hover {
-    width: 300px;
-    height: 220px;
-    transition: 0.5s;
-
-h2 {
-    margin-left: -120px;
-    transition: 0.5s;
-}
-h3 {
-    margin-left: -120px;
-    transition: 0.5s;
-}
-
-    img {
-        width: 160px;
-        height: 160px;
-        transition: 0,5s;
-    }
+   @include hover;
 }
    #activee {
     background-color: white;
@@ -491,24 +346,7 @@ background: linear-gradient(0deg,rgba(140, 196, 116, 1) 29%, rgba(140, 255, 240,
 }
 
 .bili:hover {
-    width: 300px;
-    height: 220px;
-    transition: 0.5s;
-
-h2 {
-    margin-left: -120px;
-    transition: 0.5s;
-}
-h3 {
-    margin-left: -120px;
-    transition: 0.5s;
-}
-
-    img {
-        width: 160px;
-        height: 160px;
-        transition: 0,5s;
-    }
+    @include hover;
 }
 .chappel {
 @include cards;
@@ -525,24 +363,7 @@ background: linear-gradient(180deg,rgba(230, 213, 203, 1) 55%, rgba(245, 88, 49,
     
 }
 .chappel:hover {
-    width: 300px;
-    height: 220px;
-    transition: 0.5s;
-
-h2 {
-    margin-left: -120px;
-    transition: 0.5s;
-}
-h3 {
-    margin-left: -120px;
-    transition: 0.5s;
-}
-
-    img {
-        width: 160px;
-        height: 160px;
-        transition: 0,5s;
-    }
+   @include hover;
 }
 .sabrina {
  @include cards;
@@ -560,24 +381,7 @@ background: linear-gradient(141deg,rgba(105, 177, 255, 1) 35%, rgba(92, 92, 92, 
     
 }
 .sabrina:hover {
-    width: 300px;
-    height: 220px;
-    transition: 0.5s;
-
-h2 {
-    margin-left: -120px;
-    transition: 0.5s;
-}
-h3 {
-    margin-left: -120px;
-    transition: 0.5s;
-}
-
-    img {
-        width: 160px;
-        height: 160px;
-        transition: 0,5s;
-    }
+  @include hover;
 }
 .kendrik {
 @include cards;
@@ -595,25 +399,7 @@ background: linear-gradient(350deg,rgba(217, 217, 217, 1) 0%, rgba(186, 43, 43, 
     
 }
 .kendrik:hover {
-    width: 300px;
-    height: 220px;
-    transition: 0.5s;
-    
-
-h2 {
-    margin-left: -120px;
-    transition: 0.5s;
-}
-h3 {
-    margin-left: -120px;
-    transition: 0.5s;
-}
-
-    img {
-        width: 160px;
-        height: 160px;
-        transition: 0,5s;
-    }
+   @include hover;
 }
 .post {
 @include cards;
@@ -630,24 +416,7 @@ background: linear-gradient(180deg,rgba(150, 182, 214, 1) 0%, rgba(150, 182, 214
     
 }
 .post:hover {
-    width: 300px;
-    height: 220px;
-    transition: 0.5s;
-
-h2 {
-    margin-left: -120px;
-    transition: 0.5s;
-}
-h3 {
-    margin-left: -120px;
-    transition: 0.5s;
-}
-
-    img {
-        width: 160px;
-        height: 160px;
-        transition: 0,5s;
-    }
+   @include hover;
 }
 .end {
     height: 100px;

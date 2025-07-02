@@ -100,38 +100,63 @@ html {
   display: none;
 }
 
-.card {
+#title {
+  height: 60px;
+  background-color: #3f3f3f;
+}
+#title p {
+  color: rgb(185, 185, 185);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 12px;
+}
+
+.about {
   width: 90%;
-  height: 290px;
-  background-color: #474747;
-  border-radius: 40px;
-  margin-top: 40px;
+  height: 100px;
+  background: #0767b0;
+  background: linear-gradient(167deg, rgb(7, 103, 176) 50%, rgb(9, 9, 121) 5%, rgb(0, 212, 255) 100%);
   margin-left: 5%;
+  margin-top: 30px;
+  border-radius: 30px;
   overflow: hidden;
 }
-.card img {
-  height: 230px;
-  width: 340px;
-  border-radius: 20px;
-  margin-top: 30px;
-  margin-left: 30px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.card h1 {
-  margin-left: 400px;
-  margin-bottom: 50px;
-  color: rgb(206, 206, 206);
+.about h1 {
   font-family: "Roboto", sans-serif;
+  font-weight: 400;
   font-size: 30px;
-  margin-top: -220px;
+  font-style: normal;
+  color: white;
+  text-align: center;
+  padding-top: 35px;
 }
-.card p {
-  margin-left: 400px;
-  color: rgb(206, 206, 206);
+
+.about2 {
+  width: 90%;
+  height: 200px;
+  background: #5f76ba;
+  background: linear-gradient(0deg, rgb(95, 118, 186) 0%, rgb(125, 219, 202) 100%);
+  margin-left: 5%;
+  margin-top: 30px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.about2 h1 {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 20px;
+  padding-bottom: 20px;
   font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  margin-bottom: 10px;
+}
+.about2 p {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 10px;
+  padding-bottom: 8px;
+  font-family: "Roboto", sans-serif;
 }
 
 @media screen and (min-device-width: 50px) and (max-device-width: 767px) {
@@ -160,15 +185,17 @@ html {
     color: white;
     font-size: 20px;
   }
-  .card h1 {
-    margin-left: 6px;
-    margin-top: 30px;
+  .about {
+    height: 110px;
   }
-  .card p {
-    margin-left: 6px;
+  .about h1 {
+    font-size: 21px;
   }
-  .card img {
-    display: none;
+  .about2 {
+    height: 243px;
+  }
+  .about2 h1, .about2 p {
+    font-size: 21px;
   }
 }
 @media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
@@ -193,4 +220,10 @@ html {
   .header-1 #tbc {
     margin-right: -30px;
   }
-}/*# sourceMappingURL=sestyle.css.map */
+  .about h1 {
+    font-size: 20px;
+  }
+  .about2 h1, .about2 p {
+    font-size: 20px;
+  }
+}/*# sourceMappingURL=abstyle.css.map */
