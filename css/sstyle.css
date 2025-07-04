@@ -103,8 +103,8 @@ html {
 .card {
   width: 90%;
   height: 600px;
-  background: #525252;
-  background: linear-gradient(186deg, rgb(82, 82, 82) 0%, rgb(54, 54, 54) 39%);
+  background: #2a9b97;
+  background: linear-gradient(90deg, rgb(42, 155, 151) 0%, rgb(87, 199, 133) 50%, rgb(83, 237, 170) 100%);
   margin-left: 5%;
   margin-top: 40px;
   border-radius: 50px;
@@ -112,7 +112,7 @@ html {
 }
 .card p {
   text-align: center;
-  color: rgb(186, 186, 186);
+  color: rgb(40, 40, 40);
   font-family: "Roboto", sans-serif;
   font-size: 30px;
   padding-top: 5px;
